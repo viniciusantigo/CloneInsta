@@ -1,0 +1,53 @@
+@media screen and (max-width: 416px) {
+    #insta { /* Usei esse flex direction pra que fiquem todos os itens uns sempre abaixo do outro */
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    #insta header { /* Essa parte serve pra espaçar os ícones da parte de cima do instagram */ 
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 44px; /* Essas informações sobre altura e padding eu encontrei pelo próprio instagram usando as dev tools */
+        min-height: 44px;
+        padding: 0 16px;
+        background: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    #insta main {
+        flex: 1; /* Usado pra que o main utilize todo o espaço da página e coloque o footer lá pra baixo */
+    }
+
+    #insta footer { 
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 44px;
+        min-height: 44px;
+        background: #fff;
+    }
+
+    #insta footer img {
+        border-radius: 30px;
+    }
+
+    #insta footer a { /* Serve pra deixar todos os itens do footer do site espaçados iguais ao do aplicativo do Instagram */ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        width: 75px;
+    }
+
+}
